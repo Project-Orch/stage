@@ -1,5 +1,5 @@
 import { colors } from '@stage-lib/tokens'
-import { css } from '../../styled-system/css'
+import { css } from '../../../styled-system/css'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {
