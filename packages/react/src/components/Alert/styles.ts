@@ -28,3 +28,11 @@ export const toastStyle = css({
 export const iconStyle = css({
   pt: '0.25rem',
 })
+
+export const containerStyle = css({
+  "&[data-theme='dark']": {
+    backgroundColor: 'neutral.100 !important',
+  },
+
+  backgroundColor: 'foreground.100',
+})
