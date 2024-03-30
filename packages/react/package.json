@@ -38,6 +38,7 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "@stage-lib/styled-system": "^0.2.2",
     "@stage-lib/tokens": "^0.2.2",
     "polished": "^4.3.1",
