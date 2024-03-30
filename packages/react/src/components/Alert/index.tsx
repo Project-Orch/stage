@@ -7,6 +7,7 @@ import {
   CheckCircle,
 } from '@phosphor-icons/react'
 import {
+  containerStyle,
   contentStyle,
   descriptionStyle,
   iconStyle,
@@ -19,13 +20,19 @@ export const alert = {
     toast.message(message, data),
   info: (message: string | React.ReactNode, data?: ExternalToast) =>
     toast.info(message, data),
+  success: (message: string | React.ReactNode, data?: ExternalToast) =>
+    toast.success(message, data),
+  warning: (message: string | React.ReactNode, data?: ExternalToast) =>
+    toast.warning(message, data),
+  error: (message: string | React.ReactNode, data?: ExternalToast) =>
+    toast.error(message, data),
 }
 
 export const Alert = () => {
   return (
     <Toaster
-      duration={100000000000}
       toastOptions={{
+        className: containerStyle,
         classNames: {
           toast: toastStyle,
           content: contentStyle,
