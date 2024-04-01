@@ -85,82 +85,6 @@ importers:
         specifier: ^5.4.2
         version: 5.4.3
 
-  packages/storybook:
-    dependencies:
-      '@stage-lib/react':
-        specifier: '*'
-        version: link:../react
-      '@stage-lib/styled-system':
-        specifier: ^0.2.2
-        version: 0.2.2
-      '@stage-lib/tokens':
-        specifier: ^0.2.2
-        version: 0.2.2
-      polished:
-        specifier: ^4.3.1
-        version: 4.3.1
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@chromatic-com/storybook':
-        specifier: ^1.2.22
-        version: 1.2.25(react@18.2.0)
-      '@pandacss/dev':
-        specifier: ^0.35.0
-        version: 0.35.0(typescript@5.4.3)
-      '@storybook/addon-a11y':
-        specifier: ^8.0.4
-        version: 8.0.4
-      '@storybook/addon-essentials':
-        specifier: ^8.0.0
-        version: 8.0.4(@types/react@18.2.72)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-interactions':
-        specifier: ^8.0.0
-        version: 8.0.4
-      '@storybook/addon-links':
-        specifier: ^8.0.0
-        version: 8.0.4(react@18.2.0)
-      '@storybook/addon-onboarding':
-        specifier: ^8.0.0
-        version: 8.0.4
-      '@storybook/blocks':
-        specifier: ^8.0.0
-        version: 8.0.4(@types/react@18.2.72)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/react':
-        specifier: ^8.0.0
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
-      '@storybook/react-vite':
-        specifier: ^8.0.0
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)(vite@5.2.6)
-      '@storybook/test':
-        specifier: ^8.0.0
-        version: 8.0.4
-      '@storybook/theming':
-        specifier: ^8.0.0
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
-      '@types/react':
-        specifier: ^18.2.66
-        version: 18.2.72
-      '@types/react-dom':
-        specifier: ^18.2.22
-        version: 18.2.22
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@5.2.6)
-      storybook:
-        specifier: ^8.0.0
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
-      typescript:
-        specifier: ^5.4.2
-        version: 5.4.3
-      vite:
-        specifier: ^5.1.6
-        version: 5.2.6
-
 packages:
 
   /@adobe/css-tools@4.3.3:
@@ -1133,26 +1057,6 @@ packages:
 
   /@babel/plugin-transform-property-literals@7.24.1(@babel/core@7.24.3):
     resolution: {integrity: sha512-LetvD7CrHmEx0G442gOomRr66d7q8HzzGGr4PMHGr+5YIm6++Yke+jxj246rpvsbyhJwCLxcTn6zW1P1BSenqA==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.24.3
-      '@babel/helper-plugin-utils': 7.24.0
-    dev: true
-
-  /@babel/plugin-transform-react-jsx-self@7.24.1(@babel/core@7.24.3):
-    resolution: {integrity: sha512-kDJgnPujTmAZ/9q2CN4m2/lRsUUPDvsG3+tSHWUJIzMGTt5U/b/fwWd3RO3n+5mjLrsBrVa5eKFRVSQbi3dF1w==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.24.3
-      '@babel/helper-plugin-utils': 7.24.0
-    dev: true
-
-  /@babel/plugin-transform-react-jsx-source@7.24.1(@babel/core@7.24.3):
-    resolution: {integrity: sha512-1v202n7aUq4uXAieRTKcwPzNyphlCuqHHDcdSNc+vdhoTEZcFMh+L5yZuCmGaIO7bs1nJUNfHB89TZyoL48xNA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -2650,13 +2554,6 @@ packages:
     resolution: {integrity: sha512-mjQhbcSw2FbDoyGFaOvC6ZaRkf9/0sI7mVZIpmlpNbVzrJG4jfvsfYivK+Qz3cEdVJKBEUnxfbHO39YiwqbGfw==}
     dev: false
 
-  /@storybook/addon-a11y@8.0.4:
-    resolution: {integrity: sha512-5OyZNzjNXjNUD9vBfjxFnJjMMcBFYWyI4zy5qmJcbAvBv/COiXNfNg2cr2YPNtU5WfA6nsaIESfHFGBHI3GDAg==}
-    dependencies:
-      '@storybook/addon-highlight': 8.0.4
-      axe-core: 4.9.0
-    dev: true
-
   /@storybook/addon-actions@8.0.4:
     resolution: {integrity: sha512-EyCWo+8T11/TJGYNL/AXtW4yaB+q1v2E9mixbumryCLxpTl2NtaeGZ4e0dlwfIMuw/7RWgHk2uIypcIPR/UANQ==}
     dependencies:
@@ -3694,22 +3591,6 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react@4.2.1(vite@5.2.6):
-    resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^4.2.0 || ^5.0.0
-    dependencies:
-      '@babel/core': 7.24.3
-      '@babel/plugin-transform-react-jsx-self': 7.24.1(@babel/core@7.24.3)
-      '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.3)
-      '@types/babel__core': 7.20.5
-      react-refresh: 0.14.0
-      vite: 5.2.6
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@vitest/expect@1.3.1:
     resolution: {integrity: sha512-xofQFwIzfdmLLlHa6ag0dPV8YsnKOCP1KdAeVVh34vSjN2dcUiXYCD9htu/9eM7t8Xln4v03U9HLxLpPlsXdZw==}
     dependencies:
@@ -4011,11 +3892,6 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       possible-typed-array-names: 1.0.0
-    dev: true
-
-  /axe-core@4.9.0:
-    resolution: {integrity: sha512-H5orY+M2Fr56DWmMFpMrq5Ge93qjNdPVqzBv5gWK3aD1OvjBEJlEzxf09z93dGVQeI0LiW+aCMIx1QtShC/zUw==}
-    engines: {node: '>=4'}
     dev: true
 
   /babel-core@7.0.0-bridge.0(@babel/core@7.24.3):
@@ -7415,11 +7291,6 @@ packages:
 
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
-    dev: true
-
-  /react-refresh@0.14.0:
-    resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /react@18.2.0:
