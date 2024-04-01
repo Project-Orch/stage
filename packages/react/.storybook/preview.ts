@@ -4,6 +4,15 @@ import '../src/stories/styles/index.css'
 
 const preview: Preview = {
   parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [
+        {
+          name: 'dark',
+          value: '#333333',
+        },
+      ],
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
