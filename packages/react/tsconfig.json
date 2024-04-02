@@ -19,7 +19,6 @@
     "module": "ESNext",
     "target": "es6",
     "paths": {
-      "@/*": ["./src/*"],
       "@/styled-system/*": ["./styled-system/*"]
     }
   },
