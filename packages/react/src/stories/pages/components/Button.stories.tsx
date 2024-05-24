@@ -25,6 +25,14 @@ export const Solid: Story = {
   },
 }
 
+export const Subtle: Story = {
+  args: {
+    children: 'Default',
+    variant: 'link',
+  },
+  render: () => <Button variant="subtle">Subtle</Button>,
+}
+
 export const Outline: Story = {
   args: {
     variant: 'outline',
@@ -46,12 +54,4 @@ export const Link: Story = {
     variant: 'link',
   },
   render: () => <Button variant="link">Link</Button>,
-}
-
-export const Subtle: Story = {
-  args: {
-    children: 'Default',
-    variant: 'link',
-  },
-  render: () => <Button variant="subtle">Subtle</Button>,
 }
