@@ -5,6 +5,7 @@ import { Container } from '../../components/Container'
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
+  argTypes: {},
   decorators: [
     (Story) => (
       <Container>
@@ -18,43 +19,39 @@ export default meta
 
 type Story = StoryObj<typeof Button>
 
-export const Default: Story = {
+export const Solid: Story = {
   args: {
     children: 'Default',
   },
 }
 
-export const Secondary: Story = {
-  args: {
-    children: 'Secondary',
-    variant: 'secondary',
-  },
-}
-
 export const Outline: Story = {
   args: {
-    children: 'Outline',
     variant: 'outline',
   },
-}
-
-export const Destructive: Story = {
-  args: {
-    children: 'Destructive',
-    variant: 'destructive',
-  },
+  render: () => <Button variant="outline">Outline</Button>,
 }
 
 export const Ghost: Story = {
   args: {
-    children: 'Ghost',
+    children: 'Default',
     variant: 'ghost',
   },
+  render: () => <Button variant="ghost">Ghost</Button>,
 }
 
 export const Link: Story = {
   args: {
-    children: 'Link',
+    children: 'Default',
     variant: 'link',
   },
+  render: () => <Button variant="link">Link</Button>,
+}
+
+export const Subtle: Story = {
+  args: {
+    children: 'Default',
+    variant: 'link',
+  },
+  render: () => <Button variant="subtle">Subtle</Button>,
 }

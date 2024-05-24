@@ -1,5 +1,10 @@
-import { defineConfig } from '@pandacss/dev'
+import { defineConfig, defineKeyframes } from '@pandacss/dev'
 import { stagePreset } from '@stage-lib/styled-system'
+import { collapsible } from './src/recipes/collapsible'
+import { button } from './src/recipes/button'
+import { keyframes } from './src/recipes/keyframes'
+import { conditions } from './src/recipes/conditions'
+import { spacing, sizes } from './src/recipes/spacing'
 
 export default defineConfig({
   // Whether to use css reset
@@ -18,8 +23,21 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      keyframes,
+      recipes: {
+        button,
+      },
+      slotRecipes: {
+        collapsible: collapsible,
+      },
+      tokens: {
+        spacing,
+        sizes,
+      },
+    },
   },
+  conditions,
   jsxFramework: 'react',
 
   // The output directory for your css system

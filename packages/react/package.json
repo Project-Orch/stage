@@ -5,9 +5,12 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "18.19"
+  },
   "scripts": {
     "prepare": "panda codegen",
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "npm run prepare && panda cssgen --outfile dist/styles.css && tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix",
     "storybook": "pnpm run prepare && storybook dev -p 6006",
@@ -21,6 +24,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
     "@pandacss/dev": "^0.35.0",
+    "@phosphor-icons/react": "^2.0.15",
     "@storybook/addon-essentials": "^8.0.0",
     "@storybook/addon-interactions": "^8.0.0",
     "@storybook/addon-links": "^8.0.0",
@@ -35,10 +39,12 @@
     "react": "^18.2.0",
     "storybook": "^8.0.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vite": "^5.2.11"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.15",
+    "@ark-ui/anatomy": "^3.1.0",
+    "@ark-ui/react": "^3.0.0",
     "@stage-lib/styled-system": "^0.2.2",
     "@stage-lib/tokens": "^0.2.2",
     "polished": "^4.3.1",

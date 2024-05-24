@@ -20,7 +20,7 @@ const meta: Meta<typeof Alert> = {
           Give me a alert
         </Button>
         <Button
-          variant="outline"
+          // variant="outline"
           onClick={() =>
             alert.info('Meu toast ta ficando bonito', {
               description: 'descricao bem elaborada',
@@ -30,7 +30,7 @@ const meta: Meta<typeof Alert> = {
           Info
         </Button>
         <Button
-          variant="outline"
+          // variant="outline"
           onClick={() =>
             alert.success('Meu toast ta ficando bonito', {
               description: 'descricao bem elaborada',
@@ -40,7 +40,7 @@ const meta: Meta<typeof Alert> = {
           Success
         </Button>
         <Button
-          variant="outline"
+          // variant="outline"
           onClick={() =>
             alert.warning('Meu toast ta ficando bonito', {
               description: 'descricao bem elaborada',
@@ -50,7 +50,7 @@ const meta: Meta<typeof Alert> = {
           Warning
         </Button>
         <Button
-          variant="destructive"
+          // variant="subtle"
           onClick={() =>
             alert.error('Meu toast ta ficando bonito', {
               description: 'descricao bem elaborada',
