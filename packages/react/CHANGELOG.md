@@ -1,5 +1,14 @@
 # @stage-lib/react
 
+## 0.3.0
+
+### Minor Changes
+
+- New icon button
+
+  - Add deepmerge on package.json
+  - new icon button
+
 ## 0.2.0
 
 ### Minor Changes
