@@ -47,6 +47,7 @@
     "@ark-ui/react": "^3.0.0",
     "@stage-lib/styled-system": "^0.2.2",
     "@stage-lib/tokens": "^0.2.2",
+    "deepmerge": "^4.3.1",
     "polished": "^4.3.1",
     "sonner": "^1.4.3"
   }
