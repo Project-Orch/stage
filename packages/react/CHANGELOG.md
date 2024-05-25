@@ -1,5 +1,14 @@
 # @stage-lib/react
 
+## 0.4.0
+
+### Minor Changes
+
+- Update sidebar
+
+  - 🚧 New sidebar components
+  - New icon component
+
 ## 0.3.0
 
 ### Minor Changes
