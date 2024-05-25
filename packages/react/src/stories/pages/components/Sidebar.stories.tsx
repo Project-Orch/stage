@@ -8,7 +8,11 @@ const meta: Meta<typeof Sidebar> = {
     (Story) => (
       <Container>
         <Sidebar.Root>
-          <Sidebar.Content>Gustavo</Sidebar.Content>
+          <Sidebar.Trigger />
+
+          <Sidebar.Content>
+            <Sidebar.Trigger />
+          </Sidebar.Content>
         </Sidebar.Root>
       </Container>
     ),

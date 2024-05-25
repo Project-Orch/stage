@@ -17,8 +17,14 @@ export const content = css({
   color: 'foreground.300',
 })
 
-export const Header = styled('header', {
+export const VisuallyHidden = styled('div', {
   base: {
-    all: 'unset',
+    display: 'flex',
+    w: '25px',
+    h: '50px',
+
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
 })
