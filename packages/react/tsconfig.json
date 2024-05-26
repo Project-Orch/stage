@@ -22,7 +22,8 @@
     "paths": {
       "@/styled-system/*": ["./styled-system/*"],
       "@/lib/*": ["./src/lib/*"],
-      "@/recipes/*": ["./src/recipes/*"]
+      "@/recipes/*": ["./src/recipes/*"],
+      "@/icons/*": ["./src/assets/icons/components/*"]
     }
   },
   "exclude": ["node_modules", "./styled-system/**"],

@@ -34,6 +34,7 @@ const config: StorybookConfig = {
           '@/styled-system': path.resolve(__dirname, '../styled-system'),
           '@/lib': path.resolve(__dirname, '../src/lib'),
           '@/recipes': path.resolve(__dirname, '../src/recipes'),
+          '@/icons': path.resolve(__dirname, '../src/assets/icons/components'),
         },
       },
     })
