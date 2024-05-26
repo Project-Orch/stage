@@ -1,5 +1,17 @@
 # @stage-lib/react
 
+## 0.5.0
+
+### Minor Changes
+
+- Update sidebar
+
+  - new Avatar component
+  - new User icon
+  - update trigger style
+  - new item component for sidebar
+  - new section component for sidebar
+
 ## 0.4.0
 
 ### Minor Changes
