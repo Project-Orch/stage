@@ -9,7 +9,7 @@ export const Trigger = ({ children, ...rest }: ITrigger) => {
   if (!rest.asChild) {
     return (
       <CollapsibleTrigger asChild {...rest}>
-        <IconButton size="xs" variant="ghost">
+        <IconButton size="sm" variant="ghost">
           <SidebarSimple />
         </IconButton>
       </CollapsibleTrigger>

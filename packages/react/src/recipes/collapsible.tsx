@@ -7,15 +7,17 @@ export const collapsible = defineSlotRecipe({
   base: {
     root: {
       display: 'flex',
-      h: '100%',
-      w: '100%',
+      h: 'full',
+      w: 'full',
       flexDir: 'column',
+      alignItems: 'flex-start',
 
       position: 'relative',
     },
     content: {
       overflow: 'hidden',
-      width: '100%',
+      width: 'full',
+      h: 'full',
       _open: {
         animation: 'open 250ms',
       },

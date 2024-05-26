@@ -8,10 +8,19 @@ const meta: Meta<typeof Sidebar> = {
     (Story) => (
       <Container>
         <Sidebar.Root>
-          <Sidebar.Trigger />
-
           <Sidebar.Content>
             <Sidebar.Trigger />
+            <Sidebar.Header
+              avatarProps={{
+                name: 'Gustavo Souza',
+              }}
+              title={"Gustavo's Projects"}
+              subtitle="click here for menu"
+            />
+            <Sidebar.Section>
+              <Sidebar.Item selected>Home</Sidebar.Item>
+              <Sidebar.Item disabled>Search</Sidebar.Item>
+            </Sidebar.Section>
           </Sidebar.Content>
         </Sidebar.Root>
       </Container>

@@ -11,7 +11,7 @@ export const Container = ({ children }: IContainer) => {
       className={css({
         display: 'flex',
         flex: 1,
-        height: '100%',
+        height: 'screen',
         width: '100%',
         gap: '1rem',
       })}
