@@ -6,6 +6,7 @@ import { keyframes } from './src/recipes/keyframes'
 import { conditions } from './src/recipes/conditions'
 import { spacing, sizes } from './src/recipes/spacing'
 import { iconButton } from './src/recipes/icon-button'
+import { avatar } from './src/recipes/avatar'
 
 export default defineConfig({
   // Whether to use css reset
@@ -29,6 +30,7 @@ export default defineConfig({
       recipes: {
         button,
         iconButton,
+        avatar,
       },
       slotRecipes: {
         collapsible: collapsible,
