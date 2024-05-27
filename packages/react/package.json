@@ -1,16 +1,13 @@
 {
   "name": "@stage-lib/react",
-  "version": "0.5.3",
+  "version": "0.5.2",
   "description": "",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "module": "./dist/index.mjs"
-    },
-    "./package.json": "./package.json"
-  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**"
+  ],
   "engines": {
     "node": "18.19"
   },
