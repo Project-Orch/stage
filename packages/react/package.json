@@ -2,15 +2,22 @@
   "name": "@stage-lib/react",
   "version": "0.5.1",
   "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "module": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "engines": {
     "node": "18.19"
   },
   "scripts": {
     "prepare": "panda codegen",
-    "build": "npm run prepare && panda cssgen --outfile dist/styles.css && tsup src/index.tsx --format esm,cjs --dts --external react",
+    "generate:css": "panda cssgen --outfile dist/styles.css",
+    "build": "npm run prepare && npm run generate:css && tsup ./src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix",
     "storybook": "pnpm run prepare && storybook dev -p 6006",
