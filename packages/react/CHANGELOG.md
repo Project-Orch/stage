@@ -1,5 +1,11 @@
 # @stage-lib/react
 
+## 0.5.1
+
+### Patch Changes
+
+- Adjust styled-system bundle for npm publish
+
 ## 0.5.0
 
 ### Minor Changes
