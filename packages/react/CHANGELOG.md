@@ -1,5 +1,11 @@
 # @stage-lib/react
 
+## 0.5.6
+
+### Patch Changes
+
+- remove files on package.json
+
 ## 0.5.5
 
 ### Patch Changes
