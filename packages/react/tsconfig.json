@@ -26,6 +26,6 @@
       "@/icons/*": ["./src/assets/icons/components/*"]
     }
   },
-  "exclude": ["node_modules", "./styled-system/**"],
-  "include": ["src", "typing.d.ts"]
+  "exclude": ["node_modules"],
+  "include": ["src", "typing.d.ts", "styled-system"]
 }
