@@ -1,5 +1,11 @@
 # @stage-lib/react
 
+## 0.5.5
+
+### Patch Changes
+
+- remove npmignore
+
 ## 0.5.2
 
 ### Patch Changes
