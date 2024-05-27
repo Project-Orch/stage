@@ -1,6 +1,6 @@
 {
   "name": "@stage-lib/react",
-  "version": "0.5.13",
+  "version": "0.5.14",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -1,5 +1,11 @@
 # @stage-lib/react
 
+## 0.5.14
+
+### Patch Changes
+
+- 💄 adjust fontsize for sidebar item
+
 ## 0.5.13
 
 ### Patch Changes
