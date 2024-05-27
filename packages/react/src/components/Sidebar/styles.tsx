@@ -82,7 +82,7 @@ export const Item = styled('option', {
     gap: '10px',
     p: '4px 10px',
 
-    fontSize: '1rem',
+    fontSize: '0.9rem',
     fontFamily: 'default',
     fontWeight: 'medium',
     color: 'foreground.300',
