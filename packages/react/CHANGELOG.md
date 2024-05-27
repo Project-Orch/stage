@@ -1,5 +1,11 @@
 # @stage-lib/react
 
+## 0.5.2
+
+### Patch Changes
+
+- adjust build
+
 ## 0.5.1
 
 ### Patch Changes
